@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DentaCare Admin</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../ADMIN/ADMINn.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <i class="fas fa-tooth"></i>
+            <div>
+                <h2>DentaCare</h2>
+                <p>Admin Panel</p>
+            </div>
+        </div>
+
+        <ul>
+
+            <li class="active">
+                <a href="#">
+                    <i class="ri-calendar-check-fill"></i>
+                    Calendar
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="ri-settings-3-line"></i>
+                    Settings
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="ri-logout-circle-r-line"></i>
+                    Logout
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <main class="main">
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>Good Morning </h1>
+                <p>Welcome to DentaCare Admin Dashboard</p>
+
+            </div>
+
+            <div class="profile">
+
+                <img src="../Images/Doctor 1.png">
+
+                <div>
+
+                    <h3>Dr. Raj Sharma</h3>
+                    <span>Clinic Administrator</span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <section class="dashboard">
+
+            <div class="calendar-card">
+
+                <div class="calendar-header">
+
+                    <button id="prevMonth">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </button>
+
+                    <h2 id="monthYear"></h2>
+
+                    <button id="nextMonth">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </button>
+
+                </div>
+
+                <div class="week">
+
+                    <span>Sun</span>
+                    <span>Mon</span>
+                    <span>Tue</span>
+                    <span>Wed</span>
+                    <span>Thu</span>
+                    <span>Fri</span>
+                    <span>Sat</span>
+
+                </div>
+
+                <div class="days" id="calendarDays"></div>
+
+            </div>
+
+            <div class="appointment-card">
+
+                <h2 id="selectedDate">
+                    Today's Appointments
+                </h2>
+
+                <div id="appointment-list"></div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../ADMIN/SCRIPT/Supabase.js"></script>
+    <script src="../ADMIN/Admin.js"></script>
+
+</body>
+
+</html>
