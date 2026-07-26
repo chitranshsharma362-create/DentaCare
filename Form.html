@@ -1,0 +1,79 @@
+<div class="appointment-overlay" id="appointmentOverlay">
+
+    <div class="appointment-modal">
+
+        <div class="modal-header">
+
+            <h2>Book Appointment <i class="fas fa-tooth"></i></h2>
+
+            <button class="close-btn" id="closeAppointment">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+        </div>
+
+        <form class="appointment-form" id="appointmentForm">
+
+            <div class="input-row">
+
+                <input type="text" id="fullName" placeholder="Full Name" required>
+
+                <input type="tel" id="phone" placeholder="Phone Number" required>
+
+            </div>
+
+            <div class="input-row">
+
+                <input type="email" id="email" placeholder="Email Address">
+
+                <input type="number" id="age" placeholder="Age">
+
+            </div>
+
+            <div class="input-row">
+
+                <select id="service">
+                    <option selected disabled>Select Service</option>
+                    <option>General Check-up</option>
+                    <option>Dental Cleaning</option>
+                    <option>Root Canal</option>
+                    <option>Dental Implant</option>
+                    <option>Braces</option>
+                </select>
+
+                <select id="doctor">
+                    <option selected disabled>Select Doctor</option>
+                    <option>Dr. Raj Sharma</option>
+                    <option>Dr. Neha Singh</option>
+                    <option>Dr. Aman Verma</option>
+                </select>
+
+            </div>
+
+            <div class="input-row">
+
+                <input type="date" id="date">
+
+                <input type="time" id="time">
+
+            </div>
+
+            <textarea rows="5" id="notes" placeholder="Additional Notes"></textarea>
+
+            <div class="modal-buttons">
+
+                <button type="button" class="cancel-btn" id="cancelAppointment">
+                    Cancel
+                </button>
+
+                <button type="submit" class="btn" id="bookAppointmentBtn">
+                    Book Appointment
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
